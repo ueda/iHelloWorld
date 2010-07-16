@@ -14,7 +14,7 @@
 	
 }
 
--(IBAction)ShowHelloWorld;
+-(IBAction)ShowHelloWorld:(id)sender;
 
 @end
 

@@ -10,9 +10,16 @@
 
 @implementation HelloWorldViewController
 
--(IBAction)ShowHelloWorld{
-	msgArea.text = @"Chida Core.";
+-(IBAction)ShowHelloWorld:(id)sender{
+	
+	switch ([sender tag]) {
+		case 1:msgArea.text = @"Chida Core.";
+		break;
+		case 2:msgArea.text = @"Core 2 Chida.";
+		break;
+	}
 }
+
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
