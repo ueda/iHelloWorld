@@ -10,7 +10,11 @@
 
 @interface HelloWorldViewController : UIViewController {
 
+	IBOutlet UILabel *msgArea;
+	
 }
+
+-(IBAction)ShowHelloWorld:(id)sender;
 
 @end
 
